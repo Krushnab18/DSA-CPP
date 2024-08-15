@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/array/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+A	array.h	/^	int *A;$/;"	m	struct:array	typeref:typename:int *
+append	array.c	/^void append(array *a, int ele) {$/;"	f	typeref:typename:void
+array	array.h	/^typedef struct array {$/;"	s
+array	array.h	/^}array;$/;"	t	typeref:struct:array
+display	array.c	/^void display(array a) {$/;"	f	typeref:typename:void
+display_menu	array.c	/^void display_menu() {$/;"	f	typeref:typename:void
+init	array.c	/^void init(array *a, int size) {$/;"	f	typeref:typename:void
+insert_at_index	array.c	/^void insert_at_index(array *a, int index, int ele) {$/;"	f	typeref:typename:void
+len	array.h	/^	int len;$/;"	m	struct:array	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+max	array.c	/^int max(array a) {$/;"	f	typeref:typename:int
+merge	array.c	/^void merge(array *a, array *b) {$/;"	f	typeref:typename:void
+min	array.c	/^int min(array a) {$/;"	f	typeref:typename:int
+remove_at_index	array.c	/^void remove_at_index(array *a, int index) {$/;"	f	typeref:typename:void
+reverse	array.c	/^void reverse(array *a) {$/;"	f	typeref:typename:void
+size	array.h	/^	int size;$/;"	m	struct:array	typeref:typename:int
+swap	array.c	/^void swap(int *a, int *b) {$/;"	f	typeref:typename:void

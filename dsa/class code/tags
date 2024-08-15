@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/class code/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+data	list.h	/^    int data;$/;"	m	struct:node	typeref:typename:int
+delete_beg	list.c	/^void delete_beg(list *head)$/;"	f	typeref:typename:void
+delete_end	list.c	/^void delete_end (list *head)$/;"	f	typeref:typename:void
+init	list.c	/^void init(list *head) {$/;"	f	typeref:typename:void
+insert_beg	list.c	/^void insert_beg(list *head, int d){$/;"	f	typeref:typename:void
+insert_end	list.c	/^void insert_end(list *head, int d){$/;"	f	typeref:typename:void
+list	list.h	/^typedef node* list;$/;"	t	typeref:typename:node *
+main	main.c	/^int main(){$/;"	f	typeref:typename:int
+next	list.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node *
+node	list.h	/^typedef struct node{$/;"	s
+node	list.h	/^}node;$/;"	t	typeref:struct:node
+traverse	list.c	/^void traverse(list head){$/;"	f	typeref:typename:void
