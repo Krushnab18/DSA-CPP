@@ -131,14 +131,16 @@ void merge(array *a, array *b) {
 void display_menu() {
 	
 	printf("Please select apropriate choice: \n");
-	printf("0 -> To append element to the array\n");
-	printf("1 -> Display contents of array\n");
-	printf("2 -> Remove element at specified index\n");
-	printf("3 -> Print maximum element of the array\n");
-	printf("4 -> Print minimum element of the array\n");
-	printf("5 -> Merge two arrays\n");
-	printf("6 -> Insert element at given index\n");
-
+    printf("0 -> To initialize arrays\n");
+	printf("1 -> To append element to the array\n");
+	printf("2 -> Display contents of array\n");
+	printf("3 -> Remove element at specified index\n");
+	printf("4 -> Print maximum element of the array\n");
+	printf("5 -> Print minimum element of the array\n");
+	printf("6 -> Merge two arrays\n");
+	printf("7 -> Insert element at given index\n");
+    printf("8 -> Quit\n");
+    printf("\n");
 	return;
 }
 

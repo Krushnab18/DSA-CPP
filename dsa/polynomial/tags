@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/polynomial/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+P	poly.h	/^    term *P;$/;"	m	struct:poly	typeref:typename:term *
+add_poly	poly.c	/^void add_poly(poly *p, poly *q, poly *result) {$/;"	f	typeref:typename:void
+append	poly.c	/^void append(poly *p, int coef, int exp) {$/;"	f	typeref:typename:void
+coef	poly.h	/^    int coef; \/\/Coefficient$/;"	m	struct:term	typeref:typename:int
+convert_to_standard_form	poly.c	/^poly convert_to_standard_form(poly *p, int max_exp) {$/;"	f	typeref:typename:poly
+display	poly.c	/^void display(poly p) {$/;"	f	typeref:typename:void
+display_array	insertion_sort.c	/^void display_array(int arr[], int len) {$/;"	f	typeref:typename:void
+exp	poly.h	/^    int exp; \/\/exponent$/;"	m	struct:term	typeref:typename:int
+init_poly	poly.c	/^void init_poly(poly *p, int size) {$/;"	f	typeref:typename:void
+insertion_sort	insertion_sort.c	/^void insertion_sort(int arr[], int len) {$/;"	f	typeref:typename:void
+len	poly.h	/^    int len;$/;"	m	struct:poly	typeref:typename:int
+main	insertion_sort.c	/^int main() {$/;"	f	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+max	poly.c	/^int max(int a, int b) {$/;"	f	typeref:typename:int
+poly	poly.h	/^typedef struct poly {$/;"	s
+poly	poly.h	/^}poly;$/;"	t	typeref:struct:poly
+size	poly.h	/^    int size;$/;"	m	struct:poly	typeref:typename:int
+sort_according_to_exp	poly.c	/^void sort_according_to_exp(poly *p) {$/;"	f	typeref:typename:void
+term	poly.h	/^typedef struct term{      $/;"	s
+term	poly.h	/^}term;$/;"	t	typeref:struct:term

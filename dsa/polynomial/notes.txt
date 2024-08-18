@@ -1,0 +1,5 @@
+ax4 + bx3 + cx
+ax2 + a
+
+max --> exp = 4;
+

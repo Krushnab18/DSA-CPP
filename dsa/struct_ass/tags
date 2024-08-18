@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/struct_ass/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+Date	struct.c	/^}Date;$/;"	t	typeref:struct:date	file:
+Date	structure.c	/^}Date;$/;"	t	typeref:struct:date	file:
+MAX_SIZE	structure.c	/^#define MAX_SIZE /;"	d	file:
+Marks	struct.c	/^}Marks;$/;"	t	typeref:struct:marks	file:
+Marks	structure.c	/^}Marks;$/;"	t	typeref:struct:marks	file:
+Name	struct.c	/^}Name;$/;"	t	typeref:struct:name	file:
+Name	structure.c	/^}Name;$/;"	t	typeref:struct:name	file:
+Student	struct.c	/^}Student;$/;"	t	typeref:struct:student	file:
+Student	structure.c	/^}Student;$/;"	t	typeref:struct:student	file:
+calculate_aggregate	struct.c	/^void calculate_aggregate(struct student students, int aggregate[], int n) {$/;"	f	typeref:typename:void
+calculate_aggregate	structure.c	/^void calculate_aggregate(struct student students[], double aggregate[], int n) {$/;"	f	typeref:typename:void
+computer_science	struct.c	/^    double computer_science;$/;"	m	struct:marks	typeref:typename:double	file:
+computer_science	structure.c	/^    double computer_science;$/;"	m	struct:marks	typeref:typename:double	file:
+date	struct.c	/^    Date date;$/;"	m	struct:student	typeref:typename:Date	file:
+date	struct.c	/^typedef struct date{$/;"	s	file:
+date	structure.c	/^    Date date;$/;"	m	struct:student	typeref:typename:Date	file:
+date	structure.c	/^typedef struct date{$/;"	s	file:
+day	struct.c	/^    short int day;$/;"	m	struct:date	typeref:typename:short int	file:
+day	structure.c	/^    short int day;$/;"	m	struct:date	typeref:typename:short int	file:
+display_student_details	struct.c	/^void display_student_details(struct student students, int index) {$/;"	f	typeref:typename:void
+display_student_details	structure.c	/^void display_student_details(struct student students[], int index) {$/;"	f	typeref:typename:void
+english	struct.c	/^    double english;$/;"	m	struct:marks	typeref:typename:double	file:
+english	structure.c	/^    double english;$/;"	m	struct:marks	typeref:typename:double	file:
+first_name	struct.c	/^    char first_name[20];$/;"	m	struct:name	typeref:typename:char[20]	file:
+first_name	structure.c	/^    char first_name[MAX_SIZE];$/;"	m	struct:name	typeref:typename:char[]	file:
+gender	struct.c	/^    char gender[6];$/;"	m	struct:student	typeref:typename:char[6]	file:
+gender	structure.c	/^    char gender[6];$/;"	m	struct:student	typeref:typename:char[6]	file:
+last_name	struct.c	/^    char last_name[20];$/;"	m	struct:name	typeref:typename:char[20]	file:
+last_name	structure.c	/^    char last_name[MAX_SIZE];$/;"	m	struct:name	typeref:typename:char[]	file:
+main	struct.c	/^int main() {$/;"	f	typeref:typename:int
+main	structure.c	/^int main() {$/;"	f	typeref:typename:int
+marks	struct.c	/^    Marks marks;$/;"	m	struct:student	typeref:typename:Marks	file:
+marks	struct.c	/^typedef struct marks{$/;"	s	file:
+marks	structure.c	/^    Marks marks;$/;"	m	struct:student	typeref:typename:Marks	file:
+marks	structure.c	/^typedef struct marks{$/;"	s	file:
+mathematics	struct.c	/^    double mathematics;$/;"	m	struct:marks	typeref:typename:double	file:
+mathematics	structure.c	/^    double mathematics;$/;"	m	struct:marks	typeref:typename:double	file:
+middle_name	struct.c	/^    char middle_name[20];$/;"	m	struct:name	typeref:typename:char[20]	file:
+middle_name	structure.c	/^    char middle_name[MAX_SIZE];$/;"	m	struct:name	typeref:typename:char[]	file:
+month	struct.c	/^    short int month;$/;"	m	struct:date	typeref:typename:short int	file:
+month	structure.c	/^    short int month;$/;"	m	struct:date	typeref:typename:short int	file:
+name	struct.c	/^    Name name;$/;"	m	struct:student	typeref:typename:Name	file:
+name	struct.c	/^typedef struct name{$/;"	s	file:
+name	structure.c	/^    Name name;$/;"	m	struct:student	typeref:typename:Name	file:
+name	structure.c	/^typedef struct name{$/;"	s	file:
+roll_no	struct.c	/^    int roll_no;$/;"	m	struct:student	typeref:typename:int	file:
+roll_no	structure.c	/^    int roll_no;$/;"	m	struct:student	typeref:typename:int	file:
+search_student_by_name	structure.c	/^void search_student_by_name(char first_name[], char middle_name[], char last_name[], int n) {$/;"	f	typeref:typename:void
+student	struct.c	/^typedef struct student{$/;"	s	file:
+student	structure.c	/^typedef struct student{$/;"	s	file:
+year	struct.c	/^    int year;    $/;"	m	struct:date	typeref:typename:int	file:
+year	structure.c	/^    int year;    $/;"	m	struct:date	typeref:typename:int	file:
