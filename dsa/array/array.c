@@ -6,13 +6,21 @@ void init(array *a, int size) {
 	
 	a->A = (int *)malloc(sizeof(int)*size);
 	a->size = size;
-	a->len = 0;
+	a->len = size;
+    
+    for(int i = 0; i < size; i++) {
+        a->A[i] = rand()%100;
+    }
 
 	return;
 }
 
 void append(array *a, int ele) {
-    if(a->len > a->size - 1) return;
+    
+    if(a->len > a->size - 1) {
+        return;
+    }
+
 	a->A[a->len] = ele;
 	a->len++;
 	
@@ -42,7 +50,7 @@ void remove_at_index(array *a, int index) {
 		a->A[i] = a->A[i + 1];
 		i++;
 	}
-
+    free(&(a->A[a->len - 1]));
 	a->len--;
 
 	return;

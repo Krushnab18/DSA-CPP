@@ -9,10 +9,9 @@ int main() {
 	array a;
 	array b;
     int choice, index, num, size;
-    display_menu();
-
-    while(scanf("%d", &choice)) {
+    while(1) {
         display_menu();
+        scanf("%d", &choice);
         switch(choice) {
             case INIT:
                 printf("Enter size of array a: \n");
@@ -24,10 +23,13 @@ int main() {
                 break;
             case APPEND:
                 append(&a, rand());
+                append(&b, rand());
                 break;
             case DISPLAY:
-                printf("Array elements are: \n");
+                printf("Array a elements are: \n");
                 display(a);
+                printf("Array b elements are: \n");
+                display(b);
                 break;
             case REMOVE:
                 printf("Enter the index to remove element: \n");
@@ -36,9 +38,11 @@ int main() {
                 break;
             case MAX:
                 printf("%d is the maximum element in the array a: \n", max(a));
+                printf("%d is the maximum element in the array b: \n", max(b));
                 break;
             case MIN:
                 printf("%d is the minimum element in the array a: \n", min(a));
+                printf("%d is the minimum element in the array b: \n", min(b));
                 break;
             case MERGE:
                 printf("Array after merge of a and b: \n");
@@ -60,7 +64,7 @@ int main() {
         }
         
     }
-	init(&a, 7);
+	/*init(&a, 7);
 	init(&b, 3);
 
 	append(&a, 1);
@@ -77,9 +81,9 @@ int main() {
 
     printf("Contents of array B: \n");
 	display(b);
-    printf("Contents of array A: "\n")
+    printf("Contents of array A: \n");
 	display(a);
-	printf("After reverse: \n") of array a and array b;
+	printf("After reverse: \n");
 	reverse(&a);
 	display(a);
 	
@@ -98,7 +102,7 @@ int main() {
     
 	printf("Array after merge of array a and array b:\n");
 	merge(&a, &b);
-	display(a);
+	display(a);*/
 
 	return 0;
 }
