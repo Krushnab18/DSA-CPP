@@ -38,11 +38,18 @@ void printArray(int arr[]) {
 
 void rightshift(int arr[], int n) {
 
-    for(int i = 0; i < n; i++) {
-        int j;
-        if(i - n < 0) {
-            //j = i 
+    int count = 0;
+    while(count < n) {
+
+        int last_element = arr[SIZE - 1], i;
+        
+        for(i = SIZE - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
         }
+        
+        arr[0] = last_element;
+        count++;
+
     }
     
     return;
@@ -50,17 +57,23 @@ void rightshift(int arr[], int n) {
 int main() {
 
     int arr[SIZE];
-
-    for (int i = 0; i < SIZE; i++) {
+    printf("Enter array elements(10): \n");
+    for(int i = 0; i < SIZE; i++){
         scanf("%d", &arr[i]);
     }
     
     int n;
-    printf("Enter n to shift array to left by n locations: \n");
+    printf("Enter n to shift array to left or right by n locations: \n");
     scanf("%d", &n);
     leftshift(arr, n);
+    printf("Array before left shift: \n");
+    printArray(arr);
     printf("Array after left shift: \n");
     printArray(arr);
+    printf("Array before right shift: \n");
+    printArray(arr);
+    printf("Array after right shift: \n");
     rightshift(arr, n);
+    printArray(arr);
     return 0;
 }
