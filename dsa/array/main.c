@@ -64,45 +64,6 @@ int main() {
         }
         
     }
-	/*init(&a, 7);
-	init(&b, 3);
-
-	append(&a, 1);
-	append(&a, 2);
-	append(&a, 3);
-	append(&a, 4);
-	append(&a, 5);
-
-	append(&b, 21);
-	append(&b, 22);
-	append(&b, 32);
-	append(&b, 42);
-	append(&b, 52);
-
-    printf("Contents of array B: \n");
-	display(b);
-    printf("Contents of array A: \n");
-	display(a);
-	printf("After reverse: \n");
-	reverse(&a);
-	display(a);
-	
-	printf("array after inserting 23 at index 2\n");
-	insert_at_index(&a, 2, 23);
-	display(a);
-	
-	printf("array after removing element from index 2\n");
-	remove_at_index(&a, 2);
-	display(a);
-
-	printf("Max in array a is : %d\n", max(a));
-	printf("Max in array b is : %d\n", max(b));
-	printf("Min in array a is : %d\n", min(a));
-	printf("Min in array b is : %d\n", min(b));
-    
-	printf("Array after merge of array a and array b:\n");
-	merge(&a, &b);
-	display(a);*/
 
 	return 0;
 }
