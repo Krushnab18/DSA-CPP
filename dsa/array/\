@@ -61,26 +61,22 @@ void remove_at_index(array *a, int index) {
 }
 
 void insert_at_index(array *a, int index, int ele) {
+	
+	if(index > a->size || index < 0) {
+		return;
+	}
 
-    if (index > a->len || index < 0) {
-        return;
-    }
+	int i = a->size - 1;
 
-    int *newArray = (int *)realloc(a->A, sizeof(int) * (a->size + 1));
-    a->A = newArray;
-    a->size++;
+	while(i > index) {
+		a->A[i + 1] = a->A[i];
+		i--;
+	}
 
-    int i = a->len - 1;
+	a->A[index] = ele;
+	a->len++;
 
-    while (i >= index) {
-        a->A[i + 1] = a->A[i];
-        i--;
-    }
-
-    a->A[index] = ele;
-    a->len++;
-
-    return;
+	return;
 }
 
 int max(array a) {
