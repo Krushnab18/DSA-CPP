@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/ascii_assignment/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+ASCII	ascii.h	/^typedef struct ASCII {$/;"	s
+ASCII	ascii.h	/^} ASCII;$/;"	t	typeref:struct:ASCII
+ASCII_of	ascii.c	/^void ASCII_of(ASCII *l, char ch) {$/;"	f	typeref:typename:void
+data	ascii.h	/^    int data;$/;"	m	struct:node	typeref:typename:int
+destroy_list	ascii.c	/^void destroy_list(ASCII *l) {$/;"	f	typeref:typename:void
+display_list	ascii.c	/^void display_list(ASCII l) {$/;"	f	typeref:typename:void
+front	ascii.h	/^    node *front, *rear;$/;"	m	struct:ASCII	typeref:typename:node *
+init_ASCII	ascii.c	/^void init_ASCII(ASCII *l) {$/;"	f	typeref:typename:void
+insert_at_beg	ascii.c	/^void insert_at_beg(ASCII *l, int data) {$/;"	f	typeref:typename:void
+isListEmpty	ascii.c	/^int isListEmpty(ASCII l) {$/;"	f	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+next	ascii.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+node	ascii.h	/^typedef struct node {$/;"	s
+node	ascii.h	/^} node;$/;"	t	typeref:struct:node
+previous	ascii.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+rear	ascii.h	/^    node *front, *rear;$/;"	m	struct:ASCII	typeref:typename:node *
