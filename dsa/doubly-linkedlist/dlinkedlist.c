@@ -15,7 +15,7 @@ int isEmpty(DDL l) {
     return 0;
 }
 
-void insert_using_front(DDL *l, int data) {
+void insert_using_front_end(DDL *l, int data) {
     node *nn = (node*)malloc(sizeof(node));
     if(nn) {
         nn->next = NULL;
@@ -79,7 +79,7 @@ void reverse_display(DDL l) {
     return;
 }
 
-void insert_using_rear(DDL *l, int data) {
+void insert_using_rear_end(DDL *l, int data) {
     node *nn = (node*)malloc(sizeof(node));
     if(nn) {
         nn->next = NULL;

@@ -1,0 +1,21 @@
+notes 
+
+consider list 
+
+[1 2 '3' 4 5]
+ 
+ user gives position 2
+
+p points to 1 when count = 0;
+when p points to 2 count = 1;
+when p point to 3 count = 2
+
+now loop stops
+
+now 2' next should point to new node
+3's previous should point to new node
+new node's next should point to 3
+and new node's previous should point to 2
+
+Here we also need to handle cases
+if the list is empty it would simple return
