@@ -152,7 +152,43 @@ void displayRL(DDL l) {
     printf("]\n");
     return;
 }
-int is_palindrome(DDL l);
-void remove_beg(DDL *l);
+
+int is_palindrome(DDL l) {
+    if(isEmpty(l)) {
+        return -1;
+    }
+    else {
+        node *p = l.front, *q = l.rear;
+        while(p->next != q->previous) {
+            if(p->d != q->d) {
+                return 0;
+            }
+            p = p->next;
+            q = q->previous;
+        }
+
+    }
+    return 1;
+}
+
+
+void remove_beg(DDL *l) {
+
+    if(isEmpty(*l)) {
+        return;
+    }
+    else if(l->front->next == NULL) {
+        free(l->front);
+        l->front = NULL;
+        l->rear = NULL;
+        return;
+    }
+    node *p = l->front;
+    l->front = l->front->next;
+    l->front->previous = NULL;
+    free(p);
+    return;
+}
+
 void remove_end(DDL *l);
 void remove_pos(DDL *l);

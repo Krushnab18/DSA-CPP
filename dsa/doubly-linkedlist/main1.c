@@ -15,16 +15,18 @@ int main() {
     for(int i = 0; i < 3; i++) {
         insert_end(&l,i + 10);
     }
-
+    for(int i = 0; i < 2; i++) {
+        remove_beg(&l);
+    }
     displayLR(l);
 
     displayRL(l);
    int pos;
-   scanf("%d", &pos);
+   for(int i = 0; i < 6; i++) {
+       scanf("%d", &pos);
+       insert_end(&l, pos);
+    }
 
-    insert_pos(&l, pos,45);
-
-    displayLR(l);
 
     return 0;
 }

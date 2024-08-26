@@ -26,6 +26,7 @@ insert_using_front_end	dlinkedlist.c	/^void insert_using_front_end(DDL *l, int d
 insert_using_rear_end	dlinkedlist.c	/^void insert_using_rear_end(DDL *l, int data) {$/;"	f
 isEmpty	dlinkedlist.c	/^int isEmpty(DDL l) {$/;"	f
 isEmpty	l1.c	/^int isEmpty(DDL l) {$/;"	f
+is_palindrome	l1.c	/^int is_palindrome(DDL l) {$/;"	f
 main	main.c	/^int main() {$/;"	f
 main	main1.c	/^int main() {$/;"	f
 next	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::node
@@ -38,5 +39,6 @@ previous	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typ
 previous	l1.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::
 rear	dlinkedlist.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::
 rear	l1.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::
+remove_beg	l1.c	/^void remove_beg(DDL *l) {$/;"	f
 reverse_display	dlinkedlist.c	/^void reverse_display(DDL l) {$/;"	f
 search	dlinkedlist.c	/^int search(DDL l, int key) {$/;"	f
