@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
-void init(list *head) {
-   *head = NULL;
+void init(node* head) {
+   head = NULL;
     return;
 }
 void append(list *head, int data) {
@@ -120,4 +120,30 @@ int pop(list *head) {
     int ele = (*head)->value;
     *head = (*head)->next; 
     return ele;
+}
+
+node* mergeTwoLists(list *list1, list *list2) {
+    node *p, *q, *newlist;
+    p = *list1;
+    q = *list2;
+    newlist = NULL;
+    while(p && q) {
+        if((p->value <= q->value) && p && q) {
+            append(&newlist, p->value);
+            p = p->next;
+        }
+        else if((p->value >= q->value) && p && q) {
+            append(&newlist, q->value);
+            q = q->next;
+        }
+    }
+    while(p) {
+        append(&newlist, p->value);
+        p = p->next;
+    }
+    while(q) {
+        append(&newlist, q->value);
+        q = q->next;
+    }
+    return newlist;
 }

@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/shrida mam notes/Stack(Using Linked List)-20240910/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+Node	stack.h	/^typedef struct Node {$/;"	s
+Node	stack.h	/^} Node;$/;"	t	typeref:struct:Node
+Stack	stack.h	/^typedef struct Stack {$/;"	s
+Stack	stack.h	/^}Stack;$/;"	t	typeref:struct:Stack
+data	stack.h	/^    int data;$/;"	m	struct:Node	typeref:typename:int
+display	stack.c	/^void display(Stack s){$/;"	f	typeref:typename:void
+init	stack.c	/^void init(Stack* s){$/;"	f	typeref:typename:void
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+next	stack.h	/^    struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *
+peek	stack.c	/^int peek(Stack *s){$/;"	f	typeref:typename:int
+pop	stack.c	/^void pop(Stack* s){$/;"	f	typeref:typename:void
+push	stack.c	/^void push(Stack* s, int d){$/;"	f	typeref:typename:void
+top	stack.h	/^    Node* top;$/;"	m	struct:Stack	typeref:typename:Node *

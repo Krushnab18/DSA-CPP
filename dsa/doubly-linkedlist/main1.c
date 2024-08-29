@@ -5,13 +5,14 @@
 int main() {
     DDL l;
     init(&l);
-   
+
+    printf("Enter 3 elements to insert at begin: \n");
     for(int i = 0; i < 3; i++) {
         insert_beg(&l, i);
     }
-    
-    displayLR(l);
 
+    displayLR(l);
+    printf("Enter 3 elements to insert at end: \n");
     for(int i = 0; i < 3; i++) {
         insert_end(&l,i + 10);
     }
@@ -21,12 +22,13 @@ int main() {
     displayLR(l);
 
     displayRL(l);
-   int pos;
-   for(int i = 0; i < 6; i++) {
-       scanf("%d", &pos);
-       insert_end(&l, pos);
-    }
+    int pos, data;
+    printf("Enter element and pos to insert in the list: \n");
+    scanf("%d", &pos);
+    scanf("%d", &data);
+    insert_pos(&l, pos, data);
+    displayLR(l);
 
-
+    
     return 0;
 }

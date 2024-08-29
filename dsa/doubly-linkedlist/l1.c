@@ -190,5 +190,52 @@ void remove_beg(DDL *l) {
     return;
 }
 
-void remove_end(DDL *l);
-void remove_pos(DDL *l);
+void remove_end(DDL *l) {
+    if(isEmpty(*l)) {
+        return;
+    }
+    if(l->rear == l->front) {
+        node *p = l->rear;
+        l->rear = NULL;
+        l->front = NULL;
+        free(p);
+        return;
+    }
+    else {
+        node *p = l->rear;
+        l->rear = l->rear->previous;
+        l->rear->next = NULL;
+        free(p);
+    }
+    return;
+}
+
+void remove_pos(DDL *l, int pos) {
+    int i = 0;
+    if(isEmpty(*l)) {
+        return;
+    }
+    node *p = l->front;
+
+    if(pos == 0) {
+        remove_beg(l);
+        return;
+    }
+    
+    while(i < pos && p) {
+        p = p->next;
+        i++;
+    }
+    if(p == NULL) {
+        return;
+    }
+    if(p == l->rear) {
+        remove_end(l);
+        return;
+    }
+    p->previous->next = p->next;
+    p->next->previous = p->previous;
+    free(p);
+}
+void remove_duplicates(DDL *l) {
+}

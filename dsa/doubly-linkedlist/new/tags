@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/doubly-linkedlist/new/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+DLL	dlist.h	/^typedef struct DLL{$/;"	s
+DLL	dlist.h	/^}DLL;$/;"	t	typeref:struct:DLL
+d	dlist.h	/^    int d;$/;"	m	struct:node	typeref:typename:int
+displayLR	dlist.c	/^void displayLR(DLL l) {$/;"	f	typeref:typename:void
+displayRL	dlist.c	/^void displayRL(DLL l) {$/;"	f	typeref:typename:void
+find_length	dlist.c	/^int find_length(DLL l) {$/;"	f	typeref:typename:int
+front	dlist.h	/^    node *rear, *front;$/;"	m	struct:DLL	typeref:typename:node *
+init_DLL	dlist.c	/^void init_DLL(DLL *l) {$/;"	f	typeref:typename:void
+insert_beg	dlist.c	/^void insert_beg(DLL *l, int data) {$/;"	f	typeref:typename:void
+insert_end	dlist.c	/^void insert_end(DLL *l, int data) {$/;"	f	typeref:typename:void
+insert_pos	dlist.c	/^void insert_pos(DLL *l, int pos, int data) {$/;"	f	typeref:typename:void
+isEmpty	dlist.c	/^int isEmpty(DLL l) {$/;"	f	typeref:typename:int
+is_palindrome	dlist.c	/^int is_palindrome(DLL l) {$/;"	f	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+next	dlist.h	/^    struct node *previous, *next;$/;"	m	struct:node	typeref:struct:node *
+node	dlist.h	/^typedef struct node{$/;"	s
+node	dlist.h	/^}node;$/;"	t	typeref:struct:node
+previous	dlist.h	/^    struct node *previous, *next;$/;"	m	struct:node	typeref:struct:node *
+rear	dlist.h	/^    node *rear, *front;$/;"	m	struct:DLL	typeref:typename:node *
+remove_beg	dlist.c	/^void remove_beg(DLL *l) {$/;"	f	typeref:typename:void
+remove_duplicates	dlist.c	/^void remove_duplicates(DLL *l) {$/;"	f	typeref:typename:void
+remove_end	dlist.c	/^void remove_end(DLL *l) {$/;"	f	typeref:typename:void
+remove_pos	dlist.c	/^void remove_pos(DLL *l, int pos) {$/;"	f	typeref:typename:void
+sort	dlist.c	/^void sort(DLL *l) {$/;"	f	typeref:typename:void

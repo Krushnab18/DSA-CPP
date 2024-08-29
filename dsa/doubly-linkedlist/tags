@@ -1,44 +1,69 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/doubly-linkedlist/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
 DDL	dlinkedlist.h	/^typedef struct DDL{$/;"	s
 DDL	dlinkedlist.h	/^}DDL;$/;"	t	typeref:struct:DDL
 DDL	l1.h	/^typedef struct DDL{$/;"	s
 DDL	l1.h	/^}DDL;$/;"	t	typeref:struct:DDL
-d	dlinkedlist.h	/^    int d;$/;"	m	struct:node
-d	l1.h	/^    int d;$/;"	m	struct:node
-display	dlinkedlist.c	/^void display(DDL l) {$/;"	f
-displayLR	l1.c	/^void displayLR(DDL l) {$/;"	f
-displayRL	l1.c	/^void displayRL(DDL l) {$/;"	f
-find_length	dlinkedlist.c	/^int find_length(DDL l) {$/;"	f
-find_length	l1.c	/^int find_length(DDL l) {$/;"	f
-front	dlinkedlist.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::node
-front	l1.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::node
-init	dlinkedlist.c	/^void init(DDL *l) {$/;"	f
-init	l1.c	/^void init(DDL *l) {$/;"	f
-insert_beg	l1.c	/^void insert_beg(DDL *l, int data) {$/;"	f
-insert_end	l1.c	/^void insert_end(DDL *l, int data) {$/;"	f
-insert_pos	l1.c	/^void insert_pos(DDL *l, int pos, int data) {$/;"	f
-insert_using_front_end	dlinkedlist.c	/^void insert_using_front_end(DDL *l, int data) {$/;"	f
-insert_using_rear_end	dlinkedlist.c	/^void insert_using_rear_end(DDL *l, int data) {$/;"	f
-isEmpty	dlinkedlist.c	/^int isEmpty(DDL l) {$/;"	f
-isEmpty	l1.c	/^int isEmpty(DDL l) {$/;"	f
-is_palindrome	l1.c	/^int is_palindrome(DDL l) {$/;"	f
-main	main.c	/^int main() {$/;"	f
-main	main1.c	/^int main() {$/;"	f
-next	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::node
-next	l1.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::node
+DLL	new/dlist.h	/^typedef struct DLL{$/;"	s
+DLL	new/dlist.h	/^}DLL;$/;"	t	typeref:struct:DLL
+d	dlinkedlist.h	/^    int d;$/;"	m	struct:node	typeref:typename:int
+d	l1.h	/^    int d;$/;"	m	struct:node	typeref:typename:int
+display	dlinkedlist.c	/^void display(DDL l) {$/;"	f	typeref:typename:void
+displayLR	l1.c	/^void displayLR(DDL l) {$/;"	f	typeref:typename:void
+displayLR	new/dlist.c	/^void displayLR(DLL l) {$/;"	f	typeref:typename:void
+displayRL	l1.c	/^void displayRL(DDL l) {$/;"	f	typeref:typename:void
+find_length	dlinkedlist.c	/^int find_length(DDL l) {$/;"	f	typeref:typename:int
+find_length	l1.c	/^int find_length(DDL l) {$/;"	f	typeref:typename:int
+front	dlinkedlist.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:node *
+front	l1.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:node *
+front	new/dlist.h	/^    node *read, *front;$/;"	m	struct:DLL	typeref:typename:node *
+init	dlinkedlist.c	/^void init(DDL *l) {$/;"	f	typeref:typename:void
+init	l1.c	/^void init(DDL *l) {$/;"	f	typeref:typename:void
+init	new/dlist.c	/^void init(DLL *l) {$/;"	f	typeref:typename:void
+init	new/main.c	/^void init(DLL *l) {$/;"	f	typeref:typename:void
+insert_beg	l1.c	/^void insert_beg(DDL *l, int data) {$/;"	f	typeref:typename:void
+insert_beg	new/dlist.c	/^void insert_beg(DLL *l, int data) {$/;"	f	typeref:typename:void
+insert_beg	new/main.c	/^void insert_beg(DLL *l, int data) {$/;"	f	typeref:typename:void
+insert_end	l1.c	/^void insert_end(DDL *l, int data) {$/;"	f	typeref:typename:void
+insert_end	new/dlist.c	/^void insert_end(DLL *l, int data) {$/;"	f	typeref:typename:void
+insert_pos	l1.c	/^void insert_pos(DDL *l, int pos, int data) {$/;"	f	typeref:typename:void
+insert_pos	new/dlist.c	/^void insert_pos(DLL *l, int pos) {$/;"	f	typeref:typename:void
+insert_using_front_end	dlinkedlist.c	/^void insert_using_front_end(DDL *l, int data) {$/;"	f	typeref:typename:void
+insert_using_rear_end	dlinkedlist.c	/^void insert_using_rear_end(DDL *l, int data) {$/;"	f	typeref:typename:void
+isEmpty	dlinkedlist.c	/^int isEmpty(DDL l) {$/;"	f	typeref:typename:int
+isEmpty	l1.c	/^int isEmpty(DDL l) {$/;"	f	typeref:typename:int
+isEmpty	new/dlist.c	/^int isEmpty(DDL l) {$/;"	f	typeref:typename:int
+is_palindrome	l1.c	/^int is_palindrome(DDL l) {$/;"	f	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+main	main1.c	/^int main() {$/;"	f	typeref:typename:int
+next	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+next	l1.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+next	new/dlist.h	/^    struct node *prev, *next;$/;"	m	struct:node	typeref:struct:node *
 node	dlinkedlist.h	/^typedef struct node{$/;"	s
 node	dlinkedlist.h	/^}node;$/;"	t	typeref:struct:node
 node	l1.h	/^typedef struct node{$/;"	s
 node	l1.h	/^}node;$/;"	t	typeref:struct:node
-previous	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::
-previous	l1.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node::
-rear	dlinkedlist.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::
-rear	l1.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:DDL::
-remove_beg	l1.c	/^void remove_beg(DDL *l) {$/;"	f
-reverse_display	dlinkedlist.c	/^void reverse_display(DDL l) {$/;"	f
-search	dlinkedlist.c	/^int search(DDL l, int key) {$/;"	f
+node	new/dlist.h	/^typedef struct node{$/;"	s
+node	new/dlist.h	/^}node;$/;"	t	typeref:struct:node
+prev	new/dlist.h	/^    struct node *prev, *next;$/;"	m	struct:node	typeref:struct:node *
+previous	dlinkedlist.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+previous	l1.h	/^    struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
+read	new/dlist.h	/^    node *read, *front;$/;"	m	struct:DLL	typeref:typename:node *
+rear	dlinkedlist.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:node *
+rear	l1.h	/^    struct node *front, *rear;$/;"	m	struct:DDL	typeref:struct:node *
+remove_beg	l1.c	/^void remove_beg(DDL *l) {$/;"	f	typeref:typename:void
+remove_duplicates	l1.c	/^void remove_duplicates(DDL *l) {$/;"	f	typeref:typename:void
+remove_end	l1.c	/^void remove_end(DDL *l) {$/;"	f	typeref:typename:void
+remove_pos	l1.c	/^void remove_pos(DDL *l, int pos) {$/;"	f	typeref:typename:void
+reverse_display	dlinkedlist.c	/^void reverse_display(DDL l) {$/;"	f	typeref:typename:void
+search	dlinkedlist.c	/^int search(DDL l, int key) {$/;"	f	typeref:typename:int
+val	new/dlist.h	/^    int val;$/;"	m	struct:node	typeref:typename:int

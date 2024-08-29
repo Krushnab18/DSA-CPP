@@ -2,13 +2,20 @@
 #include "list.h"
 
 int main(){
-    list l;
-    init(&l);
+    node *l;
+    list s;
+    init(l);
+    printf("%p\n", l);
+    init(&s);
     append(&l, 3);
     append(&l, 4);
     append(&l, 5);
+    append(&s, 3);
+    append(&s, 4);
+    append(&s, 5);
     display(l);
-    printf("%d\n", find_length(l));
+    display(s);
+   /* printf("%d\n", find_length(l));
     printf("Enter key to find: \n");
     int key;
     scanf("%d", &key);
@@ -18,6 +25,9 @@ int main(){
     remove_element(&l, key);
     display(l);
     printf("%d\n",pop(&l));
-    display(l);
+    display(l);*/
+    printf("merged list\n");
+    list m = mergeTwoLists(&l, &s);
+    display(m);
     return 0;
 }

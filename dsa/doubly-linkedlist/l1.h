@@ -16,4 +16,5 @@ void displayRL(DDL l);
 int is_palindrome(DDL l);
 void remove_beg(DDL *l);
 void remove_end(DDL *l);
-void remove_pos(DDL *l);
+void remove_pos(DDL *l, int pos);
+void remove_duplicates(DDL *l);

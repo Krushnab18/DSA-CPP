@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/dsa/dsa/linkedlist/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+append	list.c	/^void append(list *head, int data) {$/;"	f	typeref:typename:void
+display	list.c	/^void display(list l) {$/;"	f	typeref:typename:void
+find_length	list.c	/^int find_length(list head) {$/;"	f	typeref:typename:int
+init	list.c	/^void init(list *head) {$/;"	f	typeref:typename:void
+isListEmpty	list.c	/^int isListEmpty(list *head) {$/;"	f	typeref:typename:int
+list	list.h	/^typedef node* list;$/;"	t	typeref:typename:node *
+main	main.c	/^int main(){$/;"	f	typeref:typename:int
+mergeTwoLists	list.c	/^void mergeTwoLists(list *list1, list *list2) {$/;"	f	typeref:typename:void
+next	list.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node *
+node	list.h	/^typedef struct  node {$/;"	s
+node	list.h	/^}node;$/;"	t	typeref:struct:node
+pop	list.c	/^int pop(list *head) {$/;"	f	typeref:typename:int
+remove_element	list.c	/^void remove_element(list *head, int element) {$/;"	f	typeref:typename:void
+search	list.c	/^int search(list head, int key) {$/;"	f	typeref:typename:int
+value	list.h	/^    int value;$/;"	m	struct:node	typeref:typename:int
