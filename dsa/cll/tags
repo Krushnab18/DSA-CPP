@@ -4,16 +4,18 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/krushna/dsa/dsa/cll/	//
+!_TAG_PROC_CWD	/home/krushna/DSA-CPP/dsa/cll/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
 CLL	cll.h	/^typedef struct CLL{$/;"	s
 CLL	cll.h	/^}CLL;$/;"	t	typeref:struct:CLL
+display	cll.c	/^void display(CLL l) {$/;"	f	typeref:typename:void
 front	cll.h	/^  node *front, *rear;$/;"	m	struct:CLL	typeref:typename:node *
 init	cll.c	/^void init(CLL *l) {$/;"	f	typeref:typename:void
 insert_beg	cll.c	/^void insert_beg(CLL *l, int data) {$/;"	f	typeref:typename:void
+insert_end	cll.c	/^void insert_end(CLL *l, int data) {$/;"	f	typeref:typename:void
 is_empty	cll.c	/^int is_empty(CLL l) {$/;"	f	typeref:typename:int
 main	main.c	/^int main() {$/;"	f	typeref:typename:int
 next	cll.h	/^  struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
@@ -21,4 +23,4 @@ node	cll.h	/^typedef struct node{$/;"	s
 node	cll.h	/^}node;$/;"	t	typeref:struct:node
 previous	cll.h	/^  struct node *next, *previous;$/;"	m	struct:node	typeref:struct:node *
 rear	cll.h	/^  node *front, *rear;$/;"	m	struct:CLL	typeref:typename:node *
-val	cll.h	/^  int val;$/;"	m	struct:node	typeref:typename:int
+value	cll.h	/^  int value;$/;"	m	struct:node	typeref:typename:int

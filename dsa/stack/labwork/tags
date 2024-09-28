@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/DSA-CPP/dsa/stack/labwork/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+convert_to_postfix	infix_to_postfix.c	/^void convert_to_postfix(char *infix, char *postfix) {$/;"	f	typeref:typename:void
+data	char_stack/stack.h	/^    char data;$/;"	m	struct:node	typeref:typename:char
+data	int_stack/stack.h	/^    int data;$/;"	m	struct:node	typeref:typename:int
+init_stack	char_stack/stack.c	/^void init_stack(stack *s) {$/;"	f	typeref:typename:void
+init_stack	int_stack/stack.c	/^void init_stack(stack *s) {$/;"	f	typeref:typename:void
+is_braces	infix_to_postfix.c	/^int is_braces(char ch) {$/;"	f	typeref:typename:int
+is_correct_parenthesis	infix_to_postfix.c	/^int is_correct_parenthesis(char infix[]) {$/;"	f	typeref:typename:int
+is_digit	infix_to_postfix.c	/^int is_digit(char ch) {$/;"	f	typeref:typename:int
+is_empty	char_stack/stack.c	/^int is_empty(stack s) {$/;"	f	typeref:typename:int
+is_empty	int_stack/stack.c	/^int is_empty(stack s) {$/;"	f	typeref:typename:int
+is_operator	infix_to_postfix.c	/^int is_operator(char ch) {$/;"	f	typeref:typename:int
+is_parenthesis	infix_to_postfix.c	/^int is_parenthesis(char ch) {$/;"	f	typeref:typename:int
+is_valid	infix_to_postfix.c	/^int is_valid(char infix[]) {$/;"	f	typeref:typename:int
+main	char_stack/main.c	/^int main() {$/;"	f	typeref:typename:int
+main	infix_to_postfix.c	/^int main() {$/;"	f	typeref:typename:int
+main	int_stack/main.c	/^int main() {$/;"	f	typeref:typename:int
+main	pow.c	/^int main() {$/;"	f	typeref:typename:int
+next	char_stack/stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node *
+next	int_stack/stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node *
+node	char_stack/stack.h	/^typedef struct node {$/;"	s
+node	char_stack/stack.h	/^}node;$/;"	t	typeref:struct:node
+node	int_stack/stack.h	/^typedef struct node {$/;"	s
+node	int_stack/stack.h	/^}node;$/;"	t	typeref:struct:node
+peek	char_stack/stack.c	/^char peek(stack *s) {$/;"	f	typeref:typename:char
+peek	int_stack/stack.c	/^int peek(stack *s, int pos) {$/;"	f	typeref:typename:int
+pop	char_stack/stack.c	/^char pop(stack *s) {$/;"	f	typeref:typename:char
+pop	int_stack/stack.c	/^int pop(stack *s) {$/;"	f	typeref:typename:int
+powe	pow.c	/^int powe(int x, int n) {$/;"	f	typeref:typename:int
+precedance	infix_to_postfix.c	/^int precedance(char ch) {$/;"	f	typeref:typename:int
+push	char_stack/stack.c	/^void push(stack *s, char data) {$/;"	f	typeref:typename:void
+push	int_stack/stack.c	/^void push(stack *s, int data) {$/;"	f	typeref:typename:void
+stack	char_stack/stack.h	/^typedef struct stack {$/;"	s
+stack	char_stack/stack.h	/^}stack;$/;"	t	typeref:struct:stack
+stack	int_stack/stack.h	/^typedef struct stack {$/;"	s
+stack	int_stack/stack.h	/^}stack;$/;"	t	typeref:struct:stack
+stack_top	char_stack/stack.c	/^char stack_top(stack s) {$/;"	f	typeref:typename:char
+top	char_stack/stack.h	/^    node *top;$/;"	m	struct:stack	typeref:typename:node *
+top	int_stack/stack.h	/^    node *top;$/;"	m	struct:stack	typeref:typename:node *

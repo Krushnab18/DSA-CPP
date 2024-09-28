@@ -257,25 +257,30 @@ void sort(DLL *l) {
     return;    
 }
 void remove_duplicates(DLL *l) {
-    node *p, *q;
+    if (l->front == NULL) return;
+
+    node *p, *q, *temp;
     p = l->front;
-    while(p->next) {
+    
+    while (p && p->next) {
         q = p->next;
-        while(q) {
-            if(p->d == q->d) {
-                if(q == l->rear) {
+        
+        while (q) {
+            if (p->d == q->d) {
+                if (q == l->rear) {
                     l->rear = q->previous;
                     l->rear->next = NULL;
-                    free(q);
-                }
-                else {
+                } else {
                     q->previous->next = q->next;
                     q->next->previous = q->previous;
-                    free(q);
                 }
+                temp = q->next;
+                free(q);
+                q = temp;
+            } else {
+                q = q->next;
             }
-            q = q->next;
         }
+        p = p->next;
     }
-    return;
 }

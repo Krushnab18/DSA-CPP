@@ -1,33 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "list.h"
 
 int main(){
-    node *l;
     list s;
-    init(l);
-    printf("%p\n", l);
     init(&s);
-    append(&l, 3);
-    append(&l, 4);
-    append(&l, 5);
     append(&s, 3);
     append(&s, 4);
     append(&s, 5);
-    display(l);
+    append(&s, 3);
+    append(&s, 4);
+    append(&s, 5);
     display(s);
-   /* printf("%d\n", find_length(l));
-    printf("Enter key to find: \n");
-    int key;
-    scanf("%d", &key);
-    printf("%d\n", search(l, key));
-    printf("Enter element to remove: \n");
-    scanf("%d", &key);
-    remove_element(&l, key);
-    display(l);
-    printf("%d\n",pop(&l));
-    display(l);*/
-    printf("merged list\n");
-    list m = mergeTwoLists(&l, &s);
-    display(m);
+    insert_at_beg(&s, rand()%100);
+    insert_at_beg(&s, rand()%100);
+    insert_at_beg(&s, rand()%100);
+    insert_at_beg(&s, rand()%100);
+    display(s);
+    remove_at_pos(&s, 0);
+    display(s);
+    remove_at_pos(&s, 8);
+    display(s);
     return 0;
 }

@@ -39,19 +39,8 @@ char pop(stack *s) {
     free(p);
     return data;
 }
-char peek(stack *s, int pos) {
-    int i = 1;
-    node *p = s->top;
-    while(i != pos && p->next) {
-        p = p->next;
-        i++;
-    }
-    if(i == pos) {
-        return p->data;
-    }
-    else {
-        return '\0';
-    }
+char peek(stack s) {
+   return s.top->data; 
 }
 
 char stack_top(stack s) {

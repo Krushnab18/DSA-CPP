@@ -21,7 +21,7 @@ int main() {
     
     DLL l;
     init_DLL(&l);
-/*
+
     insert_beg(&l, 1);  //    to add an element in the end of the  DLL.
 
     insert_beg(&l, 2);  //    to add an element in the end of the  DLL.
@@ -56,21 +56,18 @@ int main() {
 
     displayLR(l);  //   to display all the elements of the list starting from left element to right.
     //to do's sort and insert_in_sorted_list
-
-    printf("%d\n",is_palindrome(l));*/
+    DLL l1;
     int arr[10] = {1, 2, 0, 0, 2, 1};
     for(int i = 0; i < 6; i++) {
-        insert_beg(&l, arr[i]);
+        insert_beg(&l1, arr[i]);
     }
-    displayLR(l);
 
-   // sort(&l);
-    printf("%d\n", is_palindrome(l));
-    displayLR(l);
+    printf("IsPalindrome: %d\n", is_palindrome(l));
+    displayLR(l1);
     
-    remove_duplicates(&l);
+    remove_duplicates(&l1);
 
-    displayLR(l);
+    displayLR(l1);
 
     return 0;
 }

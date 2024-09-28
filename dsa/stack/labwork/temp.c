@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <string.h>
 #include "char_stack/stack.h"
@@ -52,19 +53,19 @@ int is_valid(char infix[]) {
 }
 
 
-
 int precedance(char ch) {
     switch(ch) {
         case '+':
-            return 1;
         case '-':
             return 1;
         case '*':
-            return 2;
         case '/':
             return 2;
+        case '(':
+        case ')':
+            return 0; // Special case for parentheses
     }
-    return 0; //parenthesis
+    return -1;
 }
 
 void convert_to_postfix(char *infix, char *postfix) {
@@ -74,21 +75,42 @@ void convert_to_postfix(char *infix, char *postfix) {
     init_stack(&operators);
 
     while(infix[i] != '\0') {
-        if(infix[i] == '(') push(&operators, infix[i]);
-        while(is_digit(infix[i])) {
-            postfix[result_index++] = infix[i++];
-        }
-        if(i > 0 && is_digit(infix[i-1])) postfix[result_index++] = ' ';
-        if(is_operator(infix[i]) && is_empty(operators)) push(&operators, infix[i++]);
-        if(is_operator(infix[i]) && (precedance(infix[i]) > peek(operators))) push(&operators, infix[i++]);
-        if(infix[i] == ')') {
-            while((!is_empty(operators)) && (peek(operators) != '(')) {
-                postfix[result_index++] = pop(&operators);
+        if(is_digit(infix[i])) {
+            while(is_digit(infix[i])) {
+                postfix[result_index++] = infix[i++];
             }
-            pop(&operators); //removing '('
+            postfix[result_index++] = ' ';  
+        }
+
+        if(infix[i] == '(') {
+            push(&operators, infix[i]);
+            i++;
+        }
+
+        else if(infix[i] == ')') {
+            while(!is_empty(operators) && peek(operators) != '(') {
+                postfix[result_index++] = pop(&operators);
+                postfix[result_index++] = ' ';  
+            }
+            pop(&operators);
+            i++;
+        }
+
+        else if(is_operator(infix[i])) {
+            while(!is_empty(operators) && precedance(peek(operators)) >= precedance(infix[i])) {
+                postfix[result_index++] = pop(&operators);
+                postfix[result_index++] = ' ';
+            }
+            push(&operators, infix[i]);
+            i++;
         }
     }
-    return; 
+
+    while(!is_empty(operators)) {
+        postfix[result_index++] = pop(&operators);
+        postfix[result_index++] = ' '; 
+    }
+    postfix[result_index] = '\0'; 
 }
 
 int main() {
@@ -96,13 +118,7 @@ int main() {
     printf("Enter infix expression: \n");
     scanf("%[^\n]", infix);
     convert_to_postfix(infix, postfix);
-    printf("%s\n", postfix);
-    // if(is_valid(infix)) {
-    //     printf("Expression is valid\n");
-    // }
-    // else {
-    //     printf("Expression is invalid\n");
-    // }
+    printf("Postfix: %s\n", postfix);
 
     return 0;
 }
