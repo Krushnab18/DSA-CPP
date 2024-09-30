@@ -14,7 +14,7 @@ int is_empty(stack s) {
     return 0;
 }
 
-void push(stack *s, char data) {
+void push(stack *s, int data) {
     node *nn = (node*)malloc(sizeof(node));
     
     if(nn) {
@@ -30,16 +30,18 @@ void push(stack *s, char data) {
 
     return;
 }
-char pop(stack *s) {
+
+int pop(stack *s) {
     node *p = s->top;
-    char data;
-    if(is_empty(*s)) return '\0';
+    int data;
+    if(is_empty(*s)) return INT_MIN;
     s->top = s->top->next;
     data = p->data;
     free(p);
     return data;
 }
 
-char peek(stack s) {
+
+int peek(stack s) {
     return s.top->data;
 }

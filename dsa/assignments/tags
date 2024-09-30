@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	two_stacks.c	/^    int *A;$/;"	m	struct:two_stacks	file:
+check_parenthesis	parenthesis_matching.c	/^int check_parenthesis(char *str) {$/;"	f
+data	char_stack/stack.h	/^    char data;$/;"	m	struct:node
+init_stack	char_stack/stack.c	/^void init_stack(stack *s) {$/;"	f
+init_two_stacks	two_stacks.c	/^void init_two_stacks(two_stacks *st, int size1, int size2) {$/;"	f
+isEmpty1	two_stacks.c	/^int isEmpty1(two_stacks st){$/;"	f
+isEmpty2	two_stacks.c	/^int isEmpty2(two_stacks st){$/;"	f
+isFull1	two_stacks.c	/^int isFull1(two_stacks st) {$/;"	f
+isFull2	two_stacks.c	/^int isFull2(two_stacks st) {$/;"	f
+is_empty	char_stack/stack.c	/^int is_empty(stack s) {$/;"	f
+is_matching_pair	parenthesis_matching.c	/^int is_matching_pair(char opening, char closing) {$/;"	f
+main	char_stack/main.c	/^int main() {$/;"	f
+main	parenthesis_matching.c	/^int main() {$/;"	f
+main	reverese_string.c	/^int main() {$/;"	f
+main	two_stacks.c	/^int main() {$/;"	f
+next	char_stack/stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node::node
+node	char_stack/stack.h	/^typedef struct node {$/;"	s
+node	char_stack/stack.h	/^}node;$/;"	t	typeref:struct:node
+peek	char_stack/stack.c	/^char peek(stack s) {$/;"	f
+pop	char_stack/stack.c	/^char pop(stack *s) {$/;"	f
+pop1	two_stacks.c	/^void pop1(two_stacks *st) {$/;"	f
+pop2	two_stacks.c	/^void pop2(two_stacks *st) {$/;"	f
+print1	two_stacks.c	/^void print1(two_stacks st) {$/;"	f
+print2	two_stacks.c	/^void print2(two_stacks st) {$/;"	f
+push	char_stack/stack.c	/^void push(stack *s, char data) {$/;"	f
+push1	two_stacks.c	/^void push1(two_stacks *st, int data) {$/;"	f
+push2	two_stacks.c	/^void push2(two_stacks *st, int data) {$/;"	f
+reverse_string	reverese_string.c	/^void reverse_string(char *str) {$/;"	f
+size1	two_stacks.c	/^    int size1, size2;$/;"	m	struct:two_stacks	file:
+size2	two_stacks.c	/^    int size1, size2;$/;"	m	struct:two_stacks	file:
+stack	char_stack/stack.h	/^typedef struct stack {$/;"	s
+stack	char_stack/stack.h	/^}stack;$/;"	t	typeref:struct:stack
+top	char_stack/stack.h	/^    node *top;$/;"	m	struct:stack
+top1	two_stacks.c	/^    int top1, top2;$/;"	m	struct:two_stacks	file:
+top2	two_stacks.c	/^    int top1, top2;$/;"	m	struct:two_stacks	file:
+two_stacks	two_stacks.c	/^typedef struct two_stacks{$/;"	s	file:
+two_stacks	two_stacks.c	/^}two_stacks;$/;"	t	typeref:struct:two_stacks	file:

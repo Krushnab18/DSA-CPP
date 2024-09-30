@@ -1,0 +1,22 @@
+Order Book --> Priority --> based on price
+dataset format
+
+buy/sell, order id, bid price, quantity, time-stamp, stock_symbol/name
+timer --> 
+
+two data structure --> min heap for sell orders, and max heap for buy order
+one data structure --> to store data of matched orders
+
+time matched, order id(buyer), order id(seller), price_trade, quantity
+
+***Important --> Matching alogorithms(Time complexity)  -->
+buyer 1 -> 100 44
+buyer 2 -> 150 44
+seller 1 -> 125 44
+
+At least real world one percent
+
+Time graphs time/ordered matched graph, 
+
+Order id1 matched with order id2 on time, 
+

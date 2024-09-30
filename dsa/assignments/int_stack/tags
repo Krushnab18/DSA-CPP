@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+data	stack.h	/^    int data;$/;"	m	struct:node
+init_stack	stack.c	/^void init_stack(stack *s) {$/;"	f
+is_empty	stack.c	/^int is_empty(stack s) {$/;"	f
+main	main.c	/^int main() {$/;"	f
+next	stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node::node
+node	stack.h	/^typedef struct node {$/;"	s
+node	stack.h	/^}node;$/;"	t	typeref:struct:node
+peek	stack.c	/^int peek(stack s) {$/;"	f
+pop	stack.c	/^int pop(stack *s) {$/;"	f
+print	main.c	/^void print(stack s) {$/;"	f
+push	stack.c	/^void push(stack *s, int data) {$/;"	f
+stack	stack.h	/^typedef struct stack {$/;"	s
+stack	stack.h	/^}stack;$/;"	t	typeref:struct:stack
+top	stack.h	/^    node *top;$/;"	m	struct:stack

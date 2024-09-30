@@ -1,5 +1,5 @@
 typedef struct node {
-    char data;
+    int data;
     struct  node *next;
 }node;
 
@@ -8,7 +8,7 @@ typedef struct stack {
 }stack;
 
 void init_stack(stack *s);
-void push(stack *s, char data);
-char pop(stack *s);
-char peek(stack s);
+void push(stack *s, int data);
+int pop(stack *s);
+int peek(stack s);
 int is_empty(stack s);

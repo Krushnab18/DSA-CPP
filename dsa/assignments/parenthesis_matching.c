@@ -1,43 +1,37 @@
 #include <stdio.h>
-#include "char_stack/stack.h"
+#include "int_stack/stack.h"
+
+int is_matching_pair(char opening, char closing) {
+    return (opening == '(' && closing == ')') ||
+           (opening == '[' && closing == ']') ||
+           (opening == '{' && closing == '}');
+}
 
 int check_parenthesis(char *str) {
-    stack square, circular, curly;
-    init(square);
-    init(circular);
-    init(curly);
+    stack st;
+    init_stack(&st);
     int i = 0;
     while(str[i] != '\0') {
-        switch (str[i]) {
-            case '(':
-                push(&circular, str[i]);
-                break;
-            case ')':
-                if(is_empty(cirlular)) return 0;
-                pop(&circular);
-                break;
-            case '{':
-                push(&curly, str[i]);
-                break;
-            case '}':
-                if(is_empty(curly)) return 0;
-                pop(&curly);
-                break;
-            case '[':
-                push(&square, str[i]);
-                break;
-            case ']':
-                if(is_empty(square)) return 0;
-                pop(&square);
-                break;
+        if(str[i] == '(' || str[i] == '[' || str[i] == '{') {
+            push(&st, str[i]);
         }
+        else {
+            if(is_empty(st)) return 0;
+
+            if(is_matching_pair(peek(st), str[i])){
+                pop(&st);
+            }
+            else {
+                return 0;
+            }
+        }
+        i++;
     }
-    if(is_empty(circular) && is_empty(square) && is_empty(curly)) return 1;
-    return 0;
+    return is_empty(st);
 }
 
 int main() {
-    int str[100];
+    char str[100];
     printf("Enter expresssion\n");
     scanf("%[^\n]", str);
     if(check_parenthesis(str)) {
