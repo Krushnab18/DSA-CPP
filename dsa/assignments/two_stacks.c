@@ -90,7 +90,7 @@ void print2(two_stacks st) {
 }
 int main() {
     two_stacks st;
-    printf("Enter size of stack1\n");
+    printf("Enter size of stack1 and stack 2\n");
     int size1, size2;
     scanf("%d%d", &size1, &size2);
     init_two_stacks(&st, size1, size2);

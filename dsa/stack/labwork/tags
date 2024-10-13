@@ -9,41 +9,54 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+compute	infix_to_postfix.c	/^int compute(int n1, int n2, char operator) {$/;"	f	typeref:typename:int
+compute	temp.c	/^double compute(double n1, double n2, char operator) {$/;"	f	typeref:typename:double
 convert_to_postfix	infix_to_postfix.c	/^void convert_to_postfix(char *infix, char *postfix) {$/;"	f	typeref:typename:void
-data	char_stack/stack.h	/^    char data;$/;"	m	struct:node	typeref:typename:char
-data	int_stack/stack.h	/^    int data;$/;"	m	struct:node	typeref:typename:int
-init_stack	char_stack/stack.c	/^void init_stack(stack *s) {$/;"	f	typeref:typename:void
-init_stack	int_stack/stack.c	/^void init_stack(stack *s) {$/;"	f	typeref:typename:void
+convert_to_postfix	temp.c	/^void convert_to_postfix(char *infix, char *postfix) {$/;"	f	typeref:typename:void
+data	char_stack/stack_char.h	/^    char data;$/;"	m	struct:node	typeref:typename:char
+data	int_stack/stack_int.h	/^    double data;$/;"	m	struct:node_int	typeref:typename:double
+evaluate_postfix	infix_to_postfix.c	/^int evaluate_postfix(char *postfix) {$/;"	f	typeref:typename:int
+evaluate_postfix	temp.c	/^double evaluate_postfix(char* postfix) {$/;"	f	typeref:typename:double
+init_stack	char_stack/stack_char.c	/^void init_stack(stack *s) {$/;"	f	typeref:typename:void
+init_stack_int	int_stack/stack_int.c	/^void init_stack_int(stack_int *s) {$/;"	f	typeref:typename:void
 is_braces	infix_to_postfix.c	/^int is_braces(char ch) {$/;"	f	typeref:typename:int
+is_braces	temp.c	/^int is_braces(char ch) {$/;"	f	typeref:typename:int
 is_correct_parenthesis	infix_to_postfix.c	/^int is_correct_parenthesis(char infix[]) {$/;"	f	typeref:typename:int
+is_correct_parenthesis	temp.c	/^int is_correct_parenthesis(char infix[]) {$/;"	f	typeref:typename:int
 is_digit	infix_to_postfix.c	/^int is_digit(char ch) {$/;"	f	typeref:typename:int
-is_empty	char_stack/stack.c	/^int is_empty(stack s) {$/;"	f	typeref:typename:int
-is_empty	int_stack/stack.c	/^int is_empty(stack s) {$/;"	f	typeref:typename:int
+is_digit	temp.c	/^int is_digit(char ch) {$/;"	f	typeref:typename:int
+is_empty	char_stack/stack_char.c	/^int is_empty(stack s) {$/;"	f	typeref:typename:int
+is_empty_int	int_stack/stack_int.c	/^int is_empty_int(stack_int s) {$/;"	f	typeref:typename:int
 is_operator	infix_to_postfix.c	/^int is_operator(char ch) {$/;"	f	typeref:typename:int
+is_operator	temp.c	/^int is_operator(char ch) {$/;"	f	typeref:typename:int
 is_parenthesis	infix_to_postfix.c	/^int is_parenthesis(char ch) {$/;"	f	typeref:typename:int
+is_parenthesis	temp.c	/^int is_parenthesis(char ch) {$/;"	f	typeref:typename:int
 is_valid	infix_to_postfix.c	/^int is_valid(char infix[]) {$/;"	f	typeref:typename:int
+is_valid	temp.c	/^int is_valid(char infix[]) {$/;"	f	typeref:typename:int
 main	char_stack/main.c	/^int main() {$/;"	f	typeref:typename:int
 main	infix_to_postfix.c	/^int main() {$/;"	f	typeref:typename:int
 main	int_stack/main.c	/^int main() {$/;"	f	typeref:typename:int
 main	pow.c	/^int main() {$/;"	f	typeref:typename:int
-next	char_stack/stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node *
-next	int_stack/stack.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node *
-node	char_stack/stack.h	/^typedef struct node {$/;"	s
-node	char_stack/stack.h	/^}node;$/;"	t	typeref:struct:node
-node	int_stack/stack.h	/^typedef struct node {$/;"	s
-node	int_stack/stack.h	/^}node;$/;"	t	typeref:struct:node
-peek	char_stack/stack.c	/^char peek(stack *s) {$/;"	f	typeref:typename:char
-peek	int_stack/stack.c	/^int peek(stack *s, int pos) {$/;"	f	typeref:typename:int
-pop	char_stack/stack.c	/^char pop(stack *s) {$/;"	f	typeref:typename:char
-pop	int_stack/stack.c	/^int pop(stack *s) {$/;"	f	typeref:typename:int
+main	temp.c	/^int main() {$/;"	f	typeref:typename:int
+next	char_stack/stack_char.h	/^    struct  node *next;$/;"	m	struct:node	typeref:struct:node *
+next	int_stack/stack_int.h	/^    struct  node_int *next;$/;"	m	struct:node_int	typeref:struct:node_int *
+node	char_stack/stack_char.h	/^typedef struct node {$/;"	s
+node	char_stack/stack_char.h	/^}node;$/;"	t	typeref:struct:node
+node_int	int_stack/stack_int.h	/^typedef struct node_int {$/;"	s
+node_int	int_stack/stack_int.h	/^}node_int;$/;"	t	typeref:struct:node_int
+peek	char_stack/stack_char.c	/^char peek(stack s) {$/;"	f	typeref:typename:char
+peek_int	int_stack/stack_int.c	/^int peek_int(stack_int *s, int pos) {$/;"	f	typeref:typename:int
+pop	char_stack/stack_char.c	/^char pop(stack *s) {$/;"	f	typeref:typename:char
+pop_int	int_stack/stack_int.c	/^double pop_int(stack_int *s) {$/;"	f	typeref:typename:double
 powe	pow.c	/^int powe(int x, int n) {$/;"	f	typeref:typename:int
 precedance	infix_to_postfix.c	/^int precedance(char ch) {$/;"	f	typeref:typename:int
-push	char_stack/stack.c	/^void push(stack *s, char data) {$/;"	f	typeref:typename:void
-push	int_stack/stack.c	/^void push(stack *s, int data) {$/;"	f	typeref:typename:void
-stack	char_stack/stack.h	/^typedef struct stack {$/;"	s
-stack	char_stack/stack.h	/^}stack;$/;"	t	typeref:struct:stack
-stack	int_stack/stack.h	/^typedef struct stack {$/;"	s
-stack	int_stack/stack.h	/^}stack;$/;"	t	typeref:struct:stack
-stack_top	char_stack/stack.c	/^char stack_top(stack s) {$/;"	f	typeref:typename:char
-top	char_stack/stack.h	/^    node *top;$/;"	m	struct:stack	typeref:typename:node *
-top	int_stack/stack.h	/^    node *top;$/;"	m	struct:stack	typeref:typename:node *
+precedance	temp.c	/^int precedance(char ch) {$/;"	f	typeref:typename:int
+push	char_stack/stack_char.c	/^void push(stack *s, char data) {$/;"	f	typeref:typename:void
+push_int	int_stack/stack_int.c	/^void push_int(stack_int *s, double data) {$/;"	f	typeref:typename:void
+stack	char_stack/stack_char.h	/^typedef struct stack {$/;"	s
+stack	char_stack/stack_char.h	/^}stack;$/;"	t	typeref:struct:stack
+stack_int	int_stack/stack_int.h	/^typedef struct stack_int{$/;"	s
+stack_int	int_stack/stack_int.h	/^}stack_int;$/;"	t	typeref:struct:stack_int
+stack_top	char_stack/stack_char.c	/^char stack_top(stack s) {$/;"	f	typeref:typename:char
+top	char_stack/stack_char.h	/^    node *top;$/;"	m	struct:stack	typeref:typename:node *
+top	int_stack/stack_int.h	/^    node_int *top;$/;"	m	struct:stack_int	typeref:typename:node_int *

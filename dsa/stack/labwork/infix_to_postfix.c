@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "char_stack/stack.h"
-
+#include "char_stack/stack_char.h"
+#include "int_stack/stack_int.h"
 int is_digit(char ch) {
     if(ch >= '0' && ch <= '9') return 1;
     return 0;
@@ -91,18 +91,57 @@ void convert_to_postfix(char *infix, char *postfix) {
     return; 
 }
 
+int compute(int n1, int n2, char operator) {
+    int result = 0;
+    switch (operator) {
+        case '+':
+            result = n1 + n2;
+            break;
+
+        case '*':
+            result = n1 * n2;
+            break;
+
+        case '/':
+            result = n1 / n2;
+            break;
+
+        case '-':
+            result = n1 - n2;
+            break;
+    }
+    return result;
+}
+
+int evaluate_postfix(char *postfix) {
+    int i = 0, n1, n2, result;
+    stack_int st;
+    init_stack_int(&st);
+    while(postfix[i] != '\0') {
+        if(is_digit(postfix[i])) {
+            int number = 0;
+            while(is_digit(postfix[i])) {
+                number = number * 10 + (int)postfix[i++];
+            }
+            push_int(&st, number);
+            i++; //skip space
+        }
+        if(is_operator(postfix[i])) {
+            n1 = pop_int(&st);
+            n2 = pop_int(&st);
+            result = compute(n1, n2, postfix[i++]);
+            push_int(&st, result);
+            i++; //skip space after operator
+        }
+    }
+    return pop(&st);
+}
 int main() {
     char infix[100], postfix[100];
     printf("Enter infix expression: \n");
     scanf("%[^\n]", infix);
     convert_to_postfix(infix, postfix);
     printf("%s\n", postfix);
-    // if(is_valid(infix)) {
-    //     printf("Expression is valid\n");
-    // }
-    // else {
-    //     printf("Expression is invalid\n");
-    // }
 
     return 0;
 }

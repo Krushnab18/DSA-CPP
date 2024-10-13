@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/krushna/DSA-CPP/dsa/queue/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+age	queue.h	/^  unsigned int age;$/;"	m	struct:data	typeref:typename:unsigned int
+d	queue.h	/^  data d;$/;"	m	struct:node	typeref:typename:data
+data	queue.h	/^typedef struct data {$/;"	s
+data	queue.h	/^}data;$/;"	t	typeref:struct:data
+deq	queue.c	/^data deq(queue *q) {$/;"	f	typeref:typename:data
+enq	queue.c	/^void enq(queue *q, data d) {$/;"	f	typeref:typename:void
+head	queue.h	/^  node *head, *tail;$/;"	m	struct:queue	typeref:typename:node *
+main	testqueue.c	/^int main() {$/;"	f	typeref:typename:int
+name	queue.h	/^  char name[16];$/;"	m	struct:data	typeref:typename:char[16]
+next	queue.h	/^  struct node *next;$/;"	m	struct:node	typeref:struct:node *
+node	queue.h	/^typedef struct node {$/;"	s
+node	queue.h	/^}node;$/;"	t	typeref:struct:node
+qempty	queue.c	/^int qempty(queue q) {$/;"	f	typeref:typename:int
+qinit	queue.c	/^void qinit(queue *q) {$/;"	f	typeref:typename:void
+queue	queue.h	/^typedef struct queue {$/;"	s
+queue	queue.h	/^}queue;$/;"	t	typeref:struct:queue
+tail	queue.h	/^  node *head, *tail;$/;"	m	struct:queue	typeref:typename:node *
